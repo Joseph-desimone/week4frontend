@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Coding Assignemnt</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+<br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Shipped Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">Est. Delivery Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-car">Car Imported</label>
+                        <input type="text" class="form-control" id="new-car" placeholder="Car">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Add Imported Car</button>
+            </div>
+        </div>
+    </div> 
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Make of Car</th>
+            <th>Date Ordered</th>
+            <th>Shipped Date</th>
+            <th>Estimated Dilvery</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+    <script src="week4list.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
